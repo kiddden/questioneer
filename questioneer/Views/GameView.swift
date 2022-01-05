@@ -20,6 +20,7 @@ struct GameView: View {
                     .multilineTextAlignment(.leading)
                     .padding()
                 QuestionView(question: viewModel.currentQuestion)
+                    .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             }
         }
         .foregroundColor(.white)
