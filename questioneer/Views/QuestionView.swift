@@ -19,7 +19,7 @@ struct QuestionView: View {
                 .multilineTextAlignment(.leading)
             Spacer()
             HStack {
-                ForEach(0..<question.possibleAnswers.shuffled().count) { answerIndex in
+                ForEach(0..<question.possibleAnswers.count) { answerIndex in
                     Button(action: {
                         print("Tapped on option with the text: \(question.possibleAnswers[answerIndex])")
                         viewModel.makeGuess(atIndex: answerIndex)
